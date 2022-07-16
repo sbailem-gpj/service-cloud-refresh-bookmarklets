@@ -2,6 +2,7 @@
 if (document.gpj_IntervalID && document.gpj_IntervalID >= 0) {
     // If value exists and is set, stop the timer
     clearInterval(document.gpj_IntervalID);
+    clearInterval(document.gpj_ColorCycleID);
     // Clear the hue change on ServiceCloud logo
     document.getElementsByClassName("slds-global-header__logo")[0].style.filter = "hue-rotate(0deg)";
     // Notify user that the timer was stopped

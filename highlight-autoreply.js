@@ -1,3 +1,4 @@
+if (true) {
 let tablehandle = document.getElementsByClassName("uiVirtualDataTable")[1];
 let rows = tablehandle.getElementsByTagName('tr');
 
@@ -10,4 +11,5 @@ while ( x < rows.length ) {
     if (subject.startsWith("Automatic reply:")) {
         row.style.backgroundColor = "orange"
     }
+}
 }
